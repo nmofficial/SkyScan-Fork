@@ -9,6 +9,13 @@ There are 2 paths:
 	2. Download an OS image and use Balena Etcher to burn it to a card
 		- https://www.raspberrypi.org/software/operating-systems/
         - https://www.balena.io/etcher/
+When using the Raspberry Pi Imager, follow these steps to set up your pi:
+- Click on the gear icon on the bottom right before writing the image onto the MicroSD card. 
+- Check off `Enable SSH` and select `Allow public-key authentication only`. Copy and paste your public key in the respective text field. 
+	- If you don't have a public-private key pair yet, create them: `ssh-keygen`
+- Now, you can press `write` to write the OS to the MicroSD card. 
+- If you followed these steps correctly, you can skip the next section: **Enable SSH**.
+- To connect to the pi see the section: **Connecting**, however, disregard steps relating to generating and passing SSH keys
         
 
 ## Enable SSH
